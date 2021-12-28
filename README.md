@@ -1,19 +1,19 @@
 CoCalc
 ---
 
-The book is written on CoCalc. We highly recommand you to use the official CoCalc SaaS service, https://cocalc.com/
+《软件光栅化》使用CoCalc的Latex环境书写，强烈建议使用CoCalc官方的SaaS服务，https://cocalc.com，进行编译。
 
-A self-hosted version can be obtained here if you have low budget.
+如果希望在本地运行CoCalc环境，可以使用预制的Docker镜像：
 
-To start the CoCalc server:
+启动CoCalc服务器:
 
 ```bash
 docker-compose up -d
 ```
 
-and then visit http://127.0.0.1:8080
+访问http://127.0.0.1:8080
 
-After creating the CoCalc project, open a terminal in CoCalc, then
+成功创建CoCalc项目后，新建Terminal，然后
 
 ```bash
 git clone https://github.com/SoftwareRenderer/book.git
