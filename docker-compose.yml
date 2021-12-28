@@ -1,0 +1,21 @@
+version: "3.1"
+
+services:
+  nginx-proxy:
+    container_name: nginx-proxy
+    image: nginx:latest
+    restart: always
+    depends_on:
+      - cocalc
+    ports:
+      - 127.0.0.1:8043:443
+      - 127.0.0.1:8080:80
+  cocalc:
+    container_name: cocalc
+    image: sagemathinc/cocalc:latest
+    restart: always
+    volumes:
+      - data:/projects
+
+volumes:
+  data:
