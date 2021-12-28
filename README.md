@@ -1,7 +1,7 @@
 CoCalc
 ---
 
-《软件光栅化》使用CoCalc的LaTex环境书写，强烈建议使用CoCalc官方的SaaS服务，[https://cocalc.com](https://cocalc.com)，进行编译。
+《软件渲染器》使用CoCalc的LaTex环境书写，强烈建议使用CoCalc官方的SaaS服务，[https://cocalc.com](https://cocalc.com)，进行编译。
 
 如果希望在本地运行CoCalc环境，可以使用预制的Docker镜像：
 
