@@ -1,7 +1,7 @@
 CoCalc
 ---
 
-《软件光栅化》使用CoCalc的Latex环境书写，强烈建议使用CoCalc官方的SaaS服务，https://cocalc.com，进行编译。
+《软件光栅化》使用CoCalc的LaTex环境书写，强烈建议使用CoCalc官方的SaaS服务，[https://cocalc.com](https://cocalc.com)，进行编译。
 
 如果希望在本地运行CoCalc环境，可以使用预制的Docker镜像：
 
@@ -11,7 +11,7 @@ CoCalc
 docker-compose up -d
 ```
 
-访问http://127.0.0.1:8080
+访问[http://127.0.0.1:8080](http://127.0.0.1:8080)。
 
 成功创建CoCalc项目后，新建Terminal，然后
 
