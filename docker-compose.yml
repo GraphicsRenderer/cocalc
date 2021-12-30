@@ -1,7 +1,17 @@
 version: "3.1"
 
 services:
-  nginx:
+  cloudflared:
+    image: cloudflared
+    build:
+      context: .
+      dockerfile: cloudflared.Dockerfile
+    restart: on-failure
+    depends_on:
+      - cocalc-proxy
+    volumes:
+      - ~/.cloudflared:/etc/cloudflared
+  cocalc-proxy:
     image: nginx:latest
     restart: always
     depends_on:
@@ -14,7 +24,7 @@ services:
     image: cocalc
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: cocalc.Dockerfile
     restart: always
     ports:
       - 127.0.0.1:2222:22
