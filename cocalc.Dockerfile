@@ -9,5 +9,8 @@ RUN tar zxvf /tmp/pandoc.tar.gz -C /tmp
 RUN cp -r /tmp/pandoc-${PANDOC_VERSION}/share/* /usr/local/share/ && \
     cp -r /tmp/pandoc-${PANDOC_VERSION}/bin/* /usr/local/bin/
 
+RUN echo "Install build tools"
+RUN apt update && apt install -y build-essential cmake
+
 RUN echo "Clean up"
 RUN rm -rf /tmp/*
