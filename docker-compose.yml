@@ -18,6 +18,8 @@ services:
     restart: always
     ports:
       - 127.0.0.1:2222:22
+    environment:
+      - COCALC_NO_IDLE_TIMEOUT=yes
     volumes:
       - data:/projects
 
