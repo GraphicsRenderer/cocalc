@@ -11,6 +11,7 @@ RUN cp -r /tmp/pandoc-${PANDOC_VERSION}/share/* /usr/local/share/ && \
 
 RUN echo "Install build tools"
 RUN apt update && apt install -y build-essential cmake
+RUN bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
 
 RUN echo "Clean up"
 RUN rm -rf /tmp/*
